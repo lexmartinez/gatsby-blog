@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">gatsby-blog</h1>
 
-Simple and powerful minimalist blog static site, created as study case with purpose to be my blog using [Gatsby](https://www.gatsbyjs.org) as static site engine. Powered with Sass and [xxxxxx.xx](http://www.google.com) API
+Simple and powerful minimalist blog static site, created as study case with purpose to be my blog using [Gatsby](https://www.gatsbyjs.org) as static site engine. Powered with [xxxxxx.xx](http://www.google.com) API as content management platform.
 
 ## Quick start
 
