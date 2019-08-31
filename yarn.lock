@@ -3957,6 +3957,12 @@ gatsby-plugin-dark-mode@^1.1.0:
   dependencies:
     prop-types "^15.5.7"
 
+gatsby-plugin-layout@^1.1.5:
+  version "1.1.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-layout/-/gatsby-plugin-layout-1.1.5.tgz#9a6b84019bc8c7b89dcf147a01a7365d3e550e0c"
+  dependencies:
+    "@babel/runtime" "^7.5.5"
+
 gatsby-plugin-page-creator@^2.1.7:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-page-creator/-/gatsby-plugin-page-creator-2.1.7.tgz#c0d5ef46dcb1b890775dac74ba4bd9fff94c121a"
@@ -7314,6 +7320,12 @@ react-dom@^16.9.0:
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
+
+react-feather@^2.0.3:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/react-feather/-/react-feather-2.0.3.tgz#1453ff5d8c242f72b8c02846118fbd2d406375ad"
+  dependencies:
+    prop-types "^15.7.2"
 
 react-hot-loader@^4.12.11:
   version "4.12.11"

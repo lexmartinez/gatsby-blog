@@ -1,12 +1,97 @@
 @import 'dark-theme', 'light-theme';
 
 body
-    font-family: 'Abel';
+    font-family: 'Poppins';
+    max-width: 96vw !important;
+    padding: 1.5vh 2vw 1.5vh 2vw !important;
     
-    .container 
-        h1
+    .header
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        h1.title
             text-transform: uppercase;
-            letter-spacing: -1px;
-            font-family: 'Lexend Deca';
+            letter-spacing: -2px;
+            flex-grow: 1;
+
+            span.subtitle
+                font-size: 16px;
+                letter-spacing: -1px;
+                font-weight: 400;
+                margin-left: 5px;
+        
+        div.toggle
+            cursor: pointer;
+
+    .container 
         p
             font-weight: 300;
+
+        .section-title
+            font-size: 60px;
+            font-weight: 600;
+            text-align: center;
+            letter-spacing: -2px;
+            text-transform: uppercase;
+        
+        @media (max-width: 900px)
+            .section-title
+                line-height: 62px;
+                margin-top: 20px;
+
+        div.post-list
+            width: 100%;
+            min-height: 55vh;
+            display: flex;
+            justify-content: center;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+
+            div.post-card
+                min-height: 55vh;
+                width: 29vw;
+                margin-bottom: 30px;
+                margin-right: 20px;
+                margin-left: 20px;
+                margin-top: 30px;
+                cursor: pointer;
+
+            img.post-image
+                width: 100%;
+                box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2), 0 3px 10px 0px rgba(0,0,0,0.19);
+
+
+            p.post-card-title
+                font-size: 24px;
+                line-height: 24px;
+                font-weight: 600;
+                margin: 12px 0px 0px 0px;
+                text-transform: uppercase;
+
+            p.post-card-subtitle
+                font-size: 14px;
+                line-height: 14px;
+                margin: 7px 0px 0px 0px;
+
+
+            @media (max-width: 900px)
+                div.post-card
+                    min-height: 30vh;
+                    width: 100%;
+                    margin-bottom: 20px;
+                    margin-right: 3px;
+                    margin-left: 3px;
+                    margin-top: 20px;
+    
+    .footer
+        p.footer-note
+            padding-top: 15px;
+            font-weight: 200;
+            text-align: center;
+
+            b
+                font-weight: 600;
+
+
