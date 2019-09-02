@@ -1,5 +1,8 @@
 module.exports = {
-    plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-dark-mode', 'gatsby-plugin-layout',
+    siteMetadata: {
+      title: `Lex Martínez`,
+    },
+    plugins: [ 'gatsby-plugin-sass', 'gatsby-plugin-dark-mode', 'gatsby-plugin-layout', 'gatsby-plugin-react-helmet',
       {
         resolve: 'gatsby-plugin-prefetch-google-fonts',
         options: {

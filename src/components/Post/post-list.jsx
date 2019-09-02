@@ -1,5 +1,5 @@
 import React from 'react'
-import PostCard from './post'
+import PostCard from './post-card'
 
 export default ({ posts = [] }) => {
     return (<div className={'post-list'}>
