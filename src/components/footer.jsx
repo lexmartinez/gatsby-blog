@@ -3,8 +3,7 @@ import React from 'react'
 import { GitHub, Mail, Twitter } from 'react-feather'
 
 export default () => {
-  const theme = typeof window !== 'undefined' && localStorage.getItem('theme');
-  const color = theme === 'dark' ? '#dcdcdc' : '#565656'
+  const color = '#787878'
   return (
       <div className={'footer'}>
         <div className={'footer-links'}>
