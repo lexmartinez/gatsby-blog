@@ -1,13 +1,13 @@
 const axios = require('axios');
 const crypto = require('crypto');
 
-exports.sourceNodes = async ({ boundActionCreators }) => {
-  const { createNode } = boundActionCreators;
+const fetchPosts = () => axios.get('https://dev.to/api/articles?username=lexmartinez');
 
-  const fetchPosts = () => axios.get('https://hapi-blog.herokuapp.com/v1/articles?limit=10&offset=0');
+exports.sourceNodes = async ({ actions }) => {
+  const { createNode } = actions;
   const res = await fetchPosts();
 
-  res.data.map((post, i) => {
+  res.data.map((post) => {
     const postNode = {
       id: `${post.id}`,
       parent: '__SOURCE__',
@@ -15,12 +15,12 @@ exports.sourceNodes = async ({ boundActionCreators }) => {
         type: `Post`
       },
       title: post.title,
-      abstract: post.abstract,
-      content: post.content,
-      image: post.imageUrl,
-      published: new Date(post.publishedAt),
-      tags: post.tags.map((tag) => tag.name ),
-      key: post.key
+      abstract: post.description,
+      image: post.cover_image,
+      published: new Date(post.published_at),
+      tags: post.tag_list,
+      key: post.slug,
+      url: post.url
     }
 
     const contentDigest = crypto

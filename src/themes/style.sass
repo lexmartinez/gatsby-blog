@@ -10,6 +10,9 @@ body
         flex-direction: row;
         align-items: center;
 
+        @media (max-width: 900px)
+            margin-top: -22px
+
         h1.title
             text-transform: uppercase;
             letter-spacing: -2px;
@@ -49,9 +52,12 @@ body
             margin-bottom: 40px;
             flex-wrap: wrap;
 
+            a
+                text-decoration: none;
+
+
             div.post-card
-                min-height: 55vh;
-                width: 29vw;
+                width: 28vw;
                 margin-bottom: 30px;
                 margin-right: 20px;
                 margin-left: 20px;
@@ -76,12 +82,14 @@ body
                 line-height: 13px;
                 margin: 7px 0px 0px 0px;
 
+                span.post-card-date
+                    font-weight: 500;
 
             @media (max-width: 900px)
                 div.post-card
                     min-height: 30vh;
                     width: 100%;
-                    margin-bottom: 20px;
+                    margin-bottom: 30px;
                     margin-right: 3px;
                     margin-left: 3px;
                     margin-top: 20px;

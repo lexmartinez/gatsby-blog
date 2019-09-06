@@ -14,7 +14,7 @@ export default ({ data }) => {
           <meta charSet={'utf-8'}/>
           <title>{title}</title>
         </Helmet>
-        <div className={'section-title'}>Recents posts</div>
+        <div className={'section-title'}>Dev.to posts</div>
         <PostList posts={posts}/>
       </div>
   );
@@ -31,10 +31,11 @@ export const query = graphql`
       nodes {
         id
         key
-        published(formatString: "MMMM DD, YYYY")
+        published(formatString: "MMM DD, YYYY")
         tags
         title
         image
+        url
       }
     }
   }

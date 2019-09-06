@@ -3,7 +3,7 @@
 </p>
 <h1 align="center">gatsby-blog</h1>
 
-Simple and powerful minimalist blog static site, created as study case with purpose to be my blog using [Gatsby](https://www.gatsbyjs.org) as static site engine. Powered with [xxxxxx.xx](http://www.google.com) API as content management platform.
+Simple and powerful minimalist blog static site, created as study case with purpose to be my blog using [Gatsby](https://www.gatsbyjs.org) as static site engine. Powered with [dev.to](https://docs.dev.to/api/) API as data source.
 
 ## Quick start
 
@@ -25,4 +25,4 @@ go to [http://localhost:8000](http://localhost:8000) in your browser.
 
 ## License
 
-This project is licensed under MIT License - see the [LICENSE.md](https://github.com/lexmartinez/logcat-viewer/blob/master/LICENSE.md) file for details
+This project is licensed under MIT License - see the [LICENSE.md](https://github.com/lexmartinez/gatsby-blog/blob/master/LICENSE.md) file for details
